@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92095327b9af0c90f8245c5d6a659ab4",
+    "content-hash": "2e8cb74a8bb03f8d067900145dbd360e",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2969,6 +2969,69 @@
     ],
     "packages-dev": [
         {
+            "name": "dipeshsukhia/laravel-remove-public-url",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dipeshsukhia/laravel-remove-public-url.git",
+                "reference": "72143a574904b0190f3b24567869023e9c8882f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dipeshsukhia/laravel-remove-public-url/zipball/72143a574904b0190f3b24567869023e9c8882f8",
+                "reference": "72143a574904b0190f3b24567869023e9c8882f8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "^4.8|^5.0|^6.0|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dipeshsukhia\\LaravelRemovePublicUrl\\LaravelRemovePublicUrlServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelRemovePublicUrl": "Dipeshsukhia\\LaravelRemovePublicUrl\\LaravelRemovePublicUrlFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dipeshsukhia\\LaravelRemovePublicUrl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dipesh Sukhia",
+                    "email": "dipsh.sukhia@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Bhavin Gajjar",
+                    "email": "gajjarbhavin22@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "remove public from laravel project and run project in root directory",
+            "homepage": "https://github.com/dipeshsukhia/laravel-remove-public-url",
+            "keywords": [
+                "laravel",
+                "remove public from url",
+                "run laravel in root directory"
+            ],
+            "time": "2019-12-06T05:10:22+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.3.0",
             "source": {
@@ -5015,7 +5078,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "ext-json": "*"
     },
     "platform-dev": []
 }
